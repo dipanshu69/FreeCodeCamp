@@ -1,0 +1,13 @@
+ function translatePigLatin(str) {
+   let firstVowel = str.match(/[aeiou]/);
+   let firstPostion = str.indexOf(firstVowel);
+
+   if(firstPostion > 0){
+     return str.slice(firstPostion) + str.slice(0, firstPostion) + "ay"; 
+   } else if(!str.includes(firstVowel)) {
+    return str + "ay";
+   } else {
+     return str + "way";
+   }
+ }
+translatePigLatin("consonant");

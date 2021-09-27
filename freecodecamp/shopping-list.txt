@@ -1,0 +1,2 @@
+var myList = [["Milky-Bar", 25],
+["IceCream", 50],["powder", 55],["facewash", 2],["soap", 5]];

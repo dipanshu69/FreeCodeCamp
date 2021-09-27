@@ -1,0 +1,15 @@
+function mutation(arr) {
+  let sletter = arr[1].toLowerCase();
+  console.log(sletter);
+  let fletter = arr[0].toLowerCase();
+  console.log(fletter);
+
+  for(let i = 0; i<sletter.length;i++){
+    if(fletter.indexOf(sletter[i]) < 0)
+      return false
+  }
+    return true;
+  }
+
+
+mutation(["hello", "Hello"]);

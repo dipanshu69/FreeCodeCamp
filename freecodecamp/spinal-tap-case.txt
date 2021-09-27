@@ -1,0 +1,9 @@
+function spinalCase(str) {
+  let newStr = str.replace(/([a-z])([A-Z])/g, "$1_$2");
+ console.log(newStr);
+  let reg = /[\s_]+/g;
+  return newStr.split(reg).join("-").toLowerCase();
+
+}
+
+console.log(spinalCase('AllThe-small Things'));

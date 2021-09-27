@@ -1,0 +1,11 @@
+function uniteUnique(...arr) {
+  let commonArry = [].concat(...arr);
+  let unique = [];
+  for(let i = 0; i<commonArry.length;i++){
+    if(!unique.includes(commonArry[i]))
+    unique.push(commonArry[i])
+  }
+  return unique;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
